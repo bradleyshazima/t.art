@@ -1,0 +1,451 @@
+:root {
+    --stellaNova: 'Stella Nova', sans-serif;
+    --serenataNormal: 'Serenata Vantages', sans-serif;
+    --serenataLight: 'Serenata Vantages Light', sans-serif;
+    --policingMarket: 'Policing Market', sans-serif;
+
+    --white: #FEFEE3;
+    --whiteFade: #fefee34d;
+    --orange: #FFB15C;
+    --black: #272624;
+    --dark: #1E1D1B;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: var(--stellaNova);
+    color: var(--black);
+}
+
+* ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+* a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+body {
+    position: relative;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/hero.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 96px;
+
+}
+
+#navBar {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 96px;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#navBar .logo h1 {
+    font-family: var(--policingMarket);
+    font-size: 56px;
+    color: var(--white);
+}
+
+#navBar .navLinks li {
+    margin: 16px 32px;
+    font-size: 24px;
+}
+
+#hero h1 {
+    color: var(--white);
+    font-size: 96px;
+}
+
+#hero p {
+    font-family: var(--serenataNormal);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+    width: 50%;
+}
+
+#hero p span {
+    font-family: var(--policingMarket);
+    color: var(--orange);
+}
+
+* .mainButton {
+    height: 64px;
+    width: 320px;
+    background-color: var(--orange);
+    margin: 32px 0;
+}
+
+#aboutSect {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#aboutSect .aboutInfo {
+    width: 50%;
+    height: 100%;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 160px;
+}
+
+#aboutSect div .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutSect div .header h3 {
+    color: var(--white);
+    text-align: center;
+    font-size: 32px;
+}
+
+* .separator {
+    height: 3px;
+    background-color: var(--orange);
+    width: 80px;
+    margin: 24px 0;
+}
+
+#aboutSect .aboutInfo .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutSect .aboutInfo .description p,
+#aboutSect .bookings .openSessions p {
+    text-align: center;
+    color: var(--white);
+    font-family: var(--serenataNormal);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#aboutSect .bookings {
+    background-color: var(--black);
+    height: 100%;
+    width: 50%;
+    padding: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutSect .bookings .openSessions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutSect .bookings .openSessions p {
+    margin: 0 0 32px;
+}
+
+#trends {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+#trends .header {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#trends .header h3,
+#sessions .sessionInfo .header h3 {
+    font-size: 32px;
+}
+
+#trends .header p,
+#sessions .sessionInfo p {
+    font-size: 24px;
+    font-family: var(--serenataNormal);
+    font-weight: 800;
+}
+
+#trends .trendsWrapper {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#trends .trendsWrapper .trendCard {
+    height: 100%;
+    width: 20%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#trends .trendsWrapper .trendCard img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#trends .trendsWrapper .trendCard p {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+#sessions,
+#membership {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#sessions .sessionInfo,
+#membership .membershipInfo {
+    height: 100%;
+    width: 560px;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sessions .sessionsImg,
+#membership .membershipImg {
+    height: 100%;
+    width: calc(100% - 560px);
+}
+
+#sessions .sessionsImg img,
+#membership .membershipImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#sessions .sessionInfo .header {
+    display: flex;
+    flex-direction: column;
+}
+
+#membership .membershipInfo {
+    background-color: var(--black);
+}
+
+#membership .membershipInfo .header h3 {
+    font-size: 32px;
+}
+
+#membership .membershipInfo p,
+#feedback .reviewCard .reviewText p {
+    font-size: 24px;
+    font-family: var(--serenataNormal);
+    font-weight: 800;
+}
+
+#membership .membershipInfo .header h3,
+#membership .membershipInfo p {
+    color: var(--white);
+}
+
+#feedback {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#feedback .topImage {
+    width: 100%;
+    height: 75%;
+}
+
+#feedback .topImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#feedback .bottomSect {
+    width: 100%;
+    height: 25%;
+    background-color: var(--black);
+}
+
+#feedback .reviewCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 560px;
+    width: 560px;
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 25%;
+    background-color: var(--white);
+    padding: 64px;
+}
+
+#feedback .reviewCard .header h3 {
+    font-size: 32px;
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .newsLetter {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px;
+}
+
+footer .newsLetter .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .newsLetter .header h3 {
+    color: var(--white);
+    font-size: 32px;
+}
+
+footer .newsLetter .header p {
+    color: var(--white);
+    font-size: 20px;
+}
+
+footer .newsLetter form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 64px;
+    height: 64px;
+    width: 640px;
+    background-color: #FFB15C;
+}
+
+footer .newsLetter form input {
+    height: 100%;
+    padding: 32px;
+    width: calc(100% - 240px);
+    outline: none;
+}
+
+footer .newsLetter form button {
+    height: 100%;
+    width: 240px;
+    background-color: var(--orange);
+}
+
+.whiteSeparator {
+    height: 2px;
+    width: 80%;
+    background-color: var(--whiteFade);
+}
+
+footer .footLinks {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 96px;
+}
+
+footer .footLinks ul li h4 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.footLinks ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 240px;
+    margin: 16px;
+}
+
+footer .footLinks ul li h4,
+footer .footLinks ul li p,
+footer .footLinks ul li a {
+    color: var(--white);
+}
+
+footer .footNav {
+    width: 100%;
+    height: 10%;
+    background-color: var(--dark);
+    padding: 0 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footNav .copyright,
+footer .footNav ul li a {
+    color: var(--whiteFade);
+}
+
+footer .footNav ul li {
+    margin: 32px;
+}
